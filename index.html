@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrations Form</title>
+  <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+       .navbar-custom{
+        background-color: #25b8a2;
+        background-color: rgba(0, 60, 50, 0.7);
+       }
+       .navbar-custom, .navbar-brand,
+       .navbar-custom, .nav-link{
+        color: white;
+       }
+       .navbar-custom, .navbar-link:hover{
+        color: darkgray;
+       }
+
+  body{
+    color: white;
+    font-size: 15px;
+    font-family: Trebuchet MS, sans-serif;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(BG.jpg);
+    background-repeat: no-repeat;
+  }
+  .maincontainer{
+    background: Black;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 80%;
+    box-align: center;
+    margin-left: 10.5%;
+  }
+  .forms{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+  }
+  .btn{
+    width: 80px;
+  }
+  .SELECT{
+    padding-bottom: 10px;
+  }
+  .textarea{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  </style>
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="https://obmontessori.edu.ph/">OBMC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://obmontessori.edu.ph/">HOME</a>  
+                    </li>
+                     <li class="nav-item">
+                      <a class="nav-link" href="https://obmontessori.edu.ph/contact-us">CONTACT</a>  
+                    </li>
+                     <li class="nav-item">
+                      <a class="nav-link" href="https://www.google.com/maps/place/Operation+Brotherhood+Montessori+Center/@15.1373183,120.5945366,17z/data=!3m1!4b1!4m6!3m5!1s0x3396f237c7d7ec39:0xa3cae61a3f0a87ea!8m2!3d15.1373131!4d120.5971115!16zL20vMGY1MHM2?entry=ttu&g_ep=EgoyMDI0MTIwMi4wIKXMDSoASAFQAw%3D%3D">LOCATE</a>  
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+
+    </nav>
+
+  <form>
+  <div class="fluid-container mt-5 maincontainer">
+    <div class="text-center">
+      <h1>Robotics Club Registration Form</h1>
+    </div>
+      <div class="row">
+      <div class="form-group col md-6">
+        <label for="Name">Name</label><br>
+        <input type="textarea" class="form-name forms" id="Name" placeholder="Type your name here."></input>
+      </div>
+      <div class="form-group col md-6">
+        <label for="Age">Age</label><br>
+        <input type="textarea" class="form-age forms" id="Age" placeholder="Type your age here."></input>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col md-6">
+        <label for="email">Email Address</label><br>
+        <input type="email" class="form-email address forms" id="email address" placeholder="Type your email address here.">
+      </div>
+      <div class="col md-6">
+        <label for="password">Phone Number</label><br>
+        <input type="Password" class="form-phone number forms" id="phone number" placeholder="Type your phone number here.">
+      </div>
+    </div>
+    <div class="mt-5">
+      <h3>Prefered Robotics Topics</h3>
+      <div class="col">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">
+     Programming
+    </label>
+      </div>
+      <div class="col">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">
+     Electronics
+    </label>
+      </div>
+      <div class="col">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">
+     Mechanical Design
+    </label>
+      </div>
+    </div>
+    <div class="checck mt-3">
+      <h3>Robotics Experience Level</h3>
+      <div class="col">
+    <input type="radio" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">
+     Beginner
+    </label>
+      </div>
+      <div class="col">
+    <input type="radio" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">
+     Intermediate
+    </label>
+      </div>
+      <div class="col" style="padding-bottom: 15px;">
+    <input type="radio" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">
+     Advanced
+  </label>
+    </div>
+  </div>
+     <div class="row-mb-6">
+  <div class="col-mb-6 SELECT">
+      <label><h3>Preferred Robotics Project</h3></label><br>
+     <select id="select" name="select" class="select forms">
+          <option value="placeholder">Pick a project...</option>
+          <option value="Line Following Robot">Line Following Robot</option>
+          <option value="Obstacle Avoidance Robot">Obstacle Avoidance Robot</option>
+          <option value="Voice-Controlled Robot">Voice-Controlled Robot</option>
+          <option value="Autonomous Drone">Autonomous Drone</option></select>
+  </div>
+    <div class="row-mb-6">
+    <div class="col-mb-6 ">
+    <label for="textarea"><h3>Statement of Interest</h3></label><br>
+    <textarea for="textarea" name="textarea" rows="5" cols="100" class="textarea"></textarea><br>
+  </div>
+  <div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </form>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
